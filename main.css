@@ -1,0 +1,94 @@
+/***********************
+*  author: lexyee
+*  version: 1.0
+*  
+************************/
+
+
+/***********************
+*  
+*  color schema
+*  
+*  white:         #fff
+*  black:         #000
+*  white-ink:     #e2e2e2
+*  brush-color:   #333333
+*  
+************************/
+
+
+/***********************
+*  
+*  base
+*  
+************************/
+
+
+
+body {
+	
+}
+
+h1, h2, h3, h4, h5 {
+
+}
+
+a {
+
+}
+
+p {
+
+}
+
+
+/***********************
+*  
+*  playground
+*  
+************************/
+
+
+.playground {
+	background-color: #000;
+}
+
+
+/***********************
+*  
+*  brush
+*  
+************************/
+
+#brush, .brush-overlay {
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	opacity: .2;
+	transition: all .1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.brush-overlay {
+	width: 130px;
+	height: 130px;
+	background-color: #000;	
+  transform: translate(-100px,-50px);
+}
+
+#brush.active {
+	opacity: .4;
+	visibility: visible;
+	filter: blur(5px);
+}
+
+.brush-overlay.active {
+	opacity: 1;
+	visibility: visible;	
+	filter: blur(5px);
+}
+
