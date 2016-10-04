@@ -10,8 +10,26 @@
 	<![endif]-->
 </head>
 <body class="playground">
-	<div id="brush">
-		<div class="brush-overlay"></div>
+	<!-- <div id="brush"> -->
+		<!-- <div class="brush-overlay"></div> -->
+	<svg class="moon" height="300" width="400" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<circle class="moon-light" r="80" cx="100" cy="100"></circle>	
+		<circle class="moon-shadow" r="100"></circle>
+		<g id="Page-1">
+      <path d="M196,189.075327 C175.488794,211.318838 146.100519,225.251996 113.45798,225.251996 C51.4629141,225.251996 1.20598359,174.995066 1.20598359,113 C1.20598359,51.0049344 51.4629141,0.748003878 113.45798,0.748003878 C125.04435,0.748003878 136.220724,2.50340558 146.735657,5.76276368 C109.209527,18.4876575 82.2035024,54.0060551 82.2035024,95.8320477 C82.2035024,148.345515 124.774079,190.916091 177.287546,190.916091 C183.692686,190.916091 189.949906,190.282768 196,189.075327 Z" id="Combined-Shape"></path>
+    </g>
+	
+	<defs>
+		<filter id="Gaussian_Blur">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="3" />
+		</filter>
+		<filter id="Gaussian_Blur_Light">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+		</filter>
+	</defs>
+
+	</svg>
+
 	</div>
 	
   
